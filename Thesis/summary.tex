@@ -1,0 +1,73 @@
+\documentclass[ngerman,UKenglish,table]{scrbook}
+
+\newcommand*{\texlive}{2009}
+
+%------------------------------------------------------------------------------
+\usepackage{ubonn-thesis}
+\usepackage{thesis_defs}
+
+ \hypersetup{colorlinks=false,
+   linkbordercolor=blue,citebordercolor=magenta,urlbordercolor=darkgreen
+ }
+ 
+\usepackage{bibentry}
+\usepackage{booktabs}
+%\usepackage[usenames, dvipsnames]{color}
+\usepackage{colortbl}
+\usepackage{epigraph}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{hhline}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{lmodern}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[numbers]{natbib}
+\usepackage{pdflscape}
+\usepackage{printlen}
+\usepackage{ragged2e}
+\usepackage{rotating}
+\usepackage{slashbox}
+\usepackage{tabularx}
+\usepackage{tabulary}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.15\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+
+\bibliographystyle{plain}
+\nobibliography*
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\chapter*{Summary}
+
+A major obstacle of increasing the efficiency, effectiveness and quality of education is the lack of widely available, accessible, multilingual, timely, engaging and high-quality educational material.
+The creation and maintenance of comprehensive OpenCourseWare is tedious, time-consuming and expensive, with the effect that often courseware employed by teachers, instructors and professors is incomplete or outdated.
+Universities create much of the world's intellectual capital and are eager to share this knowledge beyond the walls of the academy and to grant access to education for everyone.
+Unfortunately, academic institutions have found it difficult to scale the significant organizational, technical, and cost barriers to distribution of rich OpenCourseWare while supporting the content interoperability and keeping the quality of the shared content high. 
+
+The aim of this thesis is to develop a concept for a collaborative authoring platform, supporting reusable and remixable educational content.
+Our systematic literature study revealed the lack of crucial conceptual and technological approaches supporting the large-scale collaboration on this type of content.
+Namely, the issues of content localization, remixing and repurposing, as well as user engagement and coordination techniques were not yet sufficiently researched.
+
+In the thesis we have researched, adapted and integrated collaborative authoring strategies in a comprehensive approach, which comprises the following pillars:
+\begin{itemize}
+\item In order to engage and coordinate collaborators we have developed the CrowdLearn concept, that applies social networking techniques to the structured content development.
+\item To facilitate the content reuse and repurpose we have developed the WikiApp data model, that presents the content as a sequence of content revisions, each of which can be operated and reused independently.
+\item In order to enable a fully-featured collaboration on multilingual educational content we have developed the CoSMEC concept, which allows synchronization and co-evolution of the content between its versions in different languages.
+\end{itemize}
+
+We have implemented and evaluated the developed concepts within the web-based \texttt{SlideWiki} framework.
+The application deals with two main types of structured content objects: slide sets and self-assessment items attached to the slides.
+Both content types can be authored and maintained collaboratively, with enhanced possibilities for cross-lingual reuse and repurpose.  
+The \texttt{SlideWiki} platform involves both teachers and students into the content development process, thus increasing quality not only of the developed content, but of the learning process in general.
+
+
+\end{document}

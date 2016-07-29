@@ -1,0 +1,100 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou 
+
+% adjust the page margins
+\usepackage[scale=0.7]{geometry}
+
+
+\usepackage{bibentry}
+
+% personal data
+\name{Darya}{Tarasova}
+\title{Curriculum Vitae}
+\phone[mobile]{+31~639~098~078}                   % optional, remove / comment the line if not wanted
+\address{Darya Tarasova, Spreeuwlaan 96, 3722ZC Bilthoven, The Netherlands}
+\email{darya.tarasowa@gmail.com}                               % optional, remove / comment the line if not wanted
+
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+
+\cventry{2011--2016}{Ph.D. Candidate in Computer Science}{Institute of Computer Science at University of Leipzig (2011-2013), Institute for Applied Computer Science at University of Bonn (2013-2016)}{Germany}{}{}
+\cventry{2008--2010}{M.Sc. in Applied Computer Science}{Novosibirsk State Technical University,}{Russia}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2004--2008}{B.Sc. in Applied Computer Science}{Novosibirsk State Technical University}{Russia}{}{}  % arguments 3 to 6 can be left empty
+
+
+\section{Vocational Experience}
+
+\cventry{2013--2016}{Doctoral work}{University of Bonn}{Germany}{}{}
+\cventry{2011--2013}{Doctoral work}{University of Leipzig}{Germany}{}{}
+\cventry{2006--2011}{Programming for various freelance IT projects}{}{worldwide}{}{}
+\cventry{2006--2008}{Computer science teacher}{State middle-class school}{Novosibirsk, Russia}{}{}
+
+\section{Presentations and Talks}
+
+\cventry{2015}{KESW}{The 5th International Conference on Knowledge Engineering and Semantic Web}{Moscow}{Russia}{}{}
+\cventry{2014}{OER}{The International Open Education Resources Conference}{Newcastle}{UK}{}{}
+\cventry{2014}{OCWC Global}{The OpenCourseWare Consortium Global Conference}{Ljubljana}{Slovenia}{}{}
+\cventry{2013}{CSEDU}{The International Conference on Computer Supported Education}{Aachen}{Germany}{}{}
+\cventry{2012}{EKAW}{The 17th International Conference on Knowledge Engineering and Knowledge Management}{Galway}{Ireland}{}{}
+\cventry{2012}{KESW}{The 2nd International Conference on Knowledge Engineering and Semantic Web}{St.-Petersburg}{Russia}{}{}
+
+\section{Community Service (Selection)}
+
+\cvitem{2013}{Reviewing the 6th Workshop on Linked Data on the Web (LDOW)}
+\cvitem{2014}{PC member of the 7th Workshop on Linked Data on the Web (LDOW)}
+\cvitem{2013, 2014, 2015}{PC member of the International Conference on Knowledge Engineering and Semantic Web (KESW)}
+\cvitem{2014, 2015}{PC member of the Computer Science Conference for University of Bonn Students (CSCUBS)}
+\cvitem{2015}{PC member of the Linked Learning conference (LILE2015)}
+
+\section{Languages}
+\cvitemwithcomment{Russian}{Mother language}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{German}{Basic}{}
+\cvitemwithcomment{Dutch}{Basic}{}
+\cvitemwithcomment{Hebrew}{Reading}{}
+
+\clearpage
+
+\section{PhD thesis}
+\cvitem{Title}{\emph{Collaborative Authoring of Semantically Structured Multilingual Educational Content}}
+\cvitem{Supervisor}{Prof. Dr. S{\"o}ren Auer}
+\cvitem{Summary}{A major obstacle of increasing the efficiency, effectiveness and quality of education is the lack of widely available, accessible, multilingual, timely, engaging and high-quality educational material.
+The creation and maintenance of comprehensive OpenCourseWare is tedious, time-consuming and expensive, with the effect that often courseware employed by teachers, instructors and professors is incomplete or outdated.
+Universities create much of the world's intellectual capital and are eager to share this knowledge beyond the walls of the academy and to grant access to education for everyone.
+Unfortunately, academic institutions have found it difficult to scale the significant organizational, technical, and cost barriers to distribution of rich OpenCourseWare while supporting the content interoperability and keeping the quality of the shared content high.
+The aim of this thesis is to develop a concept for a collaborative authoring platform, supporting reusable and remixable educational content.
+Our systematic literature study revealed the lack of crucial conceptual and technological approaches supporting the large-scale collaboration on this type of content.
+Namely, the issues of content localization, remixing and repurposing, as well as user engagement and coordination techniques were not yet sufficiently researched.
+In the thesis we have researched, adapted and integrated collaborative authoring strategies in a comprehensive approach, which comprises the following pillars:
+\begin{itemize}
+\item In order to engage and coordinate collaborators we have developed the CrowdLearn concept, that applies social networking techniques to the structured content development.
+\item To facilitate the content reuse and repurpose we have developed the WikiApp data model, that presents the content as a sequence of content revisions, each of which can be operated and reused independently.
+\item In order to enable a fully-featured collaboration on multilingual educational content we have developed the CoSMEC concept, which allows synchronization and co-evolution of the content between its versions in different languages.
+\end{itemize}
+We have implemented and evaluated the developed concepts within the web-based \texttt{SlideWiki} framework.
+The application deals with two main types of structured content objects: slide sets and self-assessment items attached to the slides.
+Both content types can be authored and maintained collaboratively, with enhanced possibilities for cross-lingual reuse and repurpose.  
+The \texttt{SlideWiki} platform involves both teachers and students into the content development process, thus increasing quality not only of the developed content, but of the learning process in general.
+}
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{../../refs/mypub}                       
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
